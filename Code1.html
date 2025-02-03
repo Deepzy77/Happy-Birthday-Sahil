@@ -1,0 +1,124 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sahil! 🎉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #c8a2c8; /* Lilac background */
+            color: white;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            width: 300px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Sahil Thumma! 🎂❤️</h1>
+        <p>Distance can't stop our love! Here are some fun things we can do together. 💕</p>
+        
+        <div class="section-container">
+            <div class="card">
+                <h2>📸 Our Memories</h2>
+                <p>A photo gallery of our best moments together.</p>
+                <button onclick="showGallery()">View Gallery</button>
+                <div id="gallery-content" class="gallery" style="display: none;">
+                    <img src="image1.jpg" alt="Memory 1">
+                    <img src="image2.jpg" alt="Memory 2">
+                    <img src="image3.jpg" alt="Memory 3">
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🧩 Build-a-Puzzle Game</h2>
+                <p>Let's turn our favorite pictures into puzzles and solve them together!</p>
+                <button onclick="startPuzzle()">Start Puzzle</button>
+            </div>
+
+            <div class="card">
+                <h2>🎬 Watch a Movie Together</h2>
+                <p>Sync up and enjoy a movie night no matter the distance!</p>
+                <button onclick="watchMovie()">Start Movie Night</button>
+            </div>
+
+            <div class="card">
+                <h2>🍕 Order Food for Each Other</h2>
+                <p>Let's surprise each other with yummy treats from our cities!</p>
+                <button onclick="orderFood()">Order Food</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showGallery() {
+            let gallery = document.getElementById("gallery-content");
+            gallery.style.display = gallery.style.display === "none" ? "block" : "none";
+        }
+        
+        function startPuzzle() {
+            alert("Puzzle game feature coming soon! 🎉");
+        }
+        
+        function watchMovie() {
+            alert("Movie sync feature coming soon! 🍿");
+        }
+        
+        function orderFood() {
+            alert("Food ordering feature coming soon! 🍕");
+        }
+    </script>
+</body>
+</html>
